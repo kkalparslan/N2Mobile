@@ -1,1 +1,3 @@
-* Metin alanları şifre alanları minumum/maksimum uzunluk özelliği ayarlanmamış.
+* Metin ve şifre alanları minumum/maksimum karakter(uzunluk) özelliği ayarlanmamış.
+* The minimum/maximum character(length) property of the text and password fields is not set.
+
