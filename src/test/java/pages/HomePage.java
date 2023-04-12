@@ -98,8 +98,8 @@ public class HomePage extends BasePage {
             }
         }
         BrowserUtils.waitFor(1);
-        userName_loc.sendKeys("konuttaksi");
-        userPassword_loc.sendKeys("06060606");
+        userName_loc.sendKeys("");
+        userPassword_loc.sendKeys("");
         loginBtn_loc.click();
         BrowserUtils.waitFor(20);
     }
