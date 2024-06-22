@@ -51,7 +51,6 @@ public class TestBase {
         driver.manage().window().maximize();
         actions=new Actions(driver);
 
-
     }
     @AfterMethod
     public void tearDown(ITestResult result) throws InterruptedException, IOException {
@@ -63,6 +62,5 @@ public class TestBase {
         }
         Thread.sleep(2000);
         Driver.closeDriver();
-
     }
 }

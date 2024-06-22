@@ -53,16 +53,19 @@ public class HomePage extends BasePage {
     public void hover(WebElement element, long pause) {
         new Actions(Driver.getDriver()).moveToElement(element).pause(pause).perform();
     }
+
     public void runOverMenu() {
         List<WebElement> mainMenus = Driver.getDriver().findElements(By.cssSelector(".nav-menu>li"));
         for (WebElement mainMenu : mainMenus) {
             hover(mainMenu,500);
         }
     }
+
     public void popUpMtd() {
         WebElement popUp = Driver.getDriver().findElement(By.xpath("//span[@aria-hidden='true']"));
         popUp.click();
     }
+
     public void n2general() {
         runOverMenu();
         BrowserUtils.waitFor(1);
@@ -103,5 +106,4 @@ public class HomePage extends BasePage {
         loginBtn_loc.click();
         BrowserUtils.waitFor(20);
     }
-
 }
