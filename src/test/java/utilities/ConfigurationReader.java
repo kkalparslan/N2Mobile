@@ -8,7 +8,6 @@ public class ConfigurationReader {
     private static Properties properties;
 
     static {
-
         try {
             // what file to read
             String path = "configuration.properties";
@@ -22,7 +21,6 @@ public class ConfigurationReader {
             input.close();
         } catch (Exception e) {
             e.printStackTrace();
-
         }
     }
 

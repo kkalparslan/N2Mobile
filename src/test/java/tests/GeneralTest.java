@@ -10,7 +10,6 @@ public class GeneralTest extends TestBase {
     public void n2GeneralTest() {
         homePage.popUpMtd();
         homePage.n2general();
-
     }
 
     @Test
