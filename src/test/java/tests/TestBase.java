@@ -50,8 +50,8 @@ public class TestBase {
         wait=new WebDriverWait(Driver.getDriver(),15);
         driver.manage().window().maximize();
         actions=new Actions(driver);
-
     }
+
     @AfterMethod
     public void tearDown(ITestResult result) throws InterruptedException, IOException {
         if(result.getStatus()==ITestResult.FAILURE){
